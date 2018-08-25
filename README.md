@@ -8,11 +8,6 @@ A single page app that lets user browse GAPS diet specific to the user's stage. 
 
 ## Deployment
 
-#link
-
-## Built With
-
-* [Create React App](https://github.com/facebookincubator/create-react-app)
 
 
 
