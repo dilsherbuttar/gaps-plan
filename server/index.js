@@ -1,16 +1,16 @@
 const express = require('express');
 var bodyParser = require("body-parser");
 let app = express();
+var path = require("path");
 
 app.use(express.static(__dirname + '/../client/dist'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 
 
-app.post('/', function (req, res) {
-  res.send();
-
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname + '/../client/dist/index.html'));
 });
 
 

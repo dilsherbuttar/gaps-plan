@@ -10,8 +10,7 @@ let getRecipeByIngredientName = (ingredient,gotRecipe) => {
     	app_key:config.TOKEN,
     	app_id: 'e1ed05f5',
     	diet: 'low-carb',
-    	health: 'dairy-free'
-
+    	health: 'gluten-free'
     }
    
   };
